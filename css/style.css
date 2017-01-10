@@ -1,0 +1,27 @@
+body {
+  margin: 0; }
+  body header {
+    padding: 0px;
+    margin: 0px;
+    background: #FFC63C;
+    font-family: libre Baskerville;
+    color: #041B87; }
+  body nav {
+    background: #FFC63C;
+    display: flex; }
+    body nav ul {
+      list-style-type: none; }
+      body nav ul li a {
+        color: #041B87; }
+      body nav ul li #forside {
+        text-decoration: underline; }
+    body nav .searchicon {
+      margin: 0px;
+      border: 0px;
+      background: transparent; }
+  body footer {
+    background: #FFC63C; }
+    body footer p {
+      margin: 0px; }
+
+/*# sourceMappingURL=style.css.map */

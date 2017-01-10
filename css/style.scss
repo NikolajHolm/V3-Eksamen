@@ -1,0 +1,51 @@
+$head-bg-color: #FFC63C;
+$heading-color: #041B87;
+$header-top-padding: 10px 0;
+$heading-font: libre Baskerville;
+
+body {
+    margin: 0;
+
+    header {
+    	padding: 0px;
+    	margin: 0px;
+        background: $head-bg-color;
+        font-family: $heading-font;
+        color: $heading-color;
+
+        header p {}
+    }
+
+    nav {
+        background: $head-bg-color;
+        display: flex;
+
+        ul {
+            list-style-type: none;
+
+            li {
+                a {
+                    color: $heading-color;
+                }
+
+                #forside {
+                    text-decoration: underline;
+                }
+            }
+        }
+		
+		.searchicon {
+			margin: 0px;
+			border: 0px;
+			background: transparent;
+		}
+
+    }
+
+    footer {
+    	background: $head-bg-color;
+    	p {
+    		margin: 0px;
+    	}
+    }
+}
