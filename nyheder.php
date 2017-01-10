@@ -6,6 +6,7 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/styles.css">
 	<!-- Google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -58,86 +59,68 @@
 			<div class="padding-right form-group pull-right">
 				<input type="username" class="form-control " placeholder="brugernavn">
 			</div>
-
-			<div class="col-md-8 pull-right">
-				<a href="#">Registrér dig her...</a>
-			</div>
 		</div>
 	</header>
 
 	<!-- Artikler -->
 
-	<?php 
-		include "fetchDb.php";
-	 ?>
-	<!-- <main class="col-lg-12">
-		<div class="col-md-12">
-			<article class="col-md-12">
-				<img src="img/articleImg1.jpg" alt="Storm Rider">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque sapiente accusantium quae eveniet nesciunt, doloremque. Cum, esse! Sed aliquam, sequi accusantium provident, expedita dolor ipsum ullam eum in. Optio, error.</p>
-			</article>
+	
+	<main class="col-lg-10 col-md-offset-1">
+	<!-- 	<?php 
+		// include "fetchDb.php";
+	?> -->
+	<div class="col-md-8">
+		<article>
+			<img src="img/news3.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum id quod veniam quisquam, illo quas exercitationem iste deserunt consectetur commodi molestias odit consequatur at pariatur eius amet, adipisci quibusdam expedita.</p>
+		</article>
+		<article>
+			<img src="img/news4.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati animi natus, nihil omnis dolor laborum blanditiis cumque, quisquam nostrum soluta dolorum. Minus autem dicta totam praesentium, rem ullam, quaerat nihil.</p>
+		</article>
+		<article>
+			<img src="img/news1.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit doloribus odit nesciunt temporibus doloremque excepturi amet omnis! Optio earum repudiandae numquam inventore ipsam incidunt iusto vitae repellendus sunt voluptate, beatae!</p>
+		</article>
+	</div>
+	
+		<aside class="col-md-4">
+			<img class="center-block" src="img/sponsor1.jpg" alt="">
+			<img class="center-block" src="img/sponsor2.jpg" alt="">
+			<img class="center-block" src="img/sponsor3.jpg" alt="">
+		</aside>
+</main>
 
-			<article class="col-md-12">
-				<img src="img/articleImg2.jpg" alt="Horses 3DS">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit sunt facere voluptas deleniti asperiores, voluptatum dignissimos quae minus nemo natus ullam minima voluptatibus pariatur molestiae iure eveniet quis ea autem.</p>
-			</article>
+<footer class="col-xs-12">
+	<div class="col-md-5">
+		<a href="#">Islændere i DK</a>
+		<br>
+		<a href="#">Tågehornvej 32</a>
+		<p>9300 Ølstykke</p>
+		<p>islandere(at)live.com</p>
+	</div>
 
-			<article class="col-md-12">
-				<img src="img/articleImg3.jpg" alt="Embrace dirty boots">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quam quis incidunt, magnam maiores atque soluta corporis temporibus, ipsa adipisci blanditiis nulla sed facere provident.</p>
-			</article>
-
-			<article class="col-md-12">
-				<img src="img/articleImg4.jpg" alt="riding horse">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit harum dolor, amet dolore laboriosam quod itaque officia maiores, suscipit excepturi delectus hic perspiciatis nam commodi.</p>
-			</article>
-
-			<article class="col-md-12">
-				<img src="img/articleImg5.jpg" alt="Meeting">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat accusamus praesentium animi, harum consectetur facilis, perferendis at voluptas error, vero tempora excepturi recusandae. Odit optio, eos sit saepe impedit aspernatur.</p>
-			</article>
-
-			<article class="col-md-12">
-				<img src="img/articleImg7.jpg" alt="People">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus illo sequi, delectus dolores ex, eveniet, doloribus totam, reprehenderit voluptates rerum magnam enim hic cupiditate voluptas deleniti assumenda at labore. Placeat?</p>
-			</article>
-
-			<article class="col-md-12">
-				<img src="img/articleImg8.jpg" alt="IceRiding">
-			</article>
-		</div> -->
-	</main>
-
-	<footer class="col-xs-12">
-		<div class="col-md-5">
-			<a href="#">Islændere i DK</a>
-			<br>
-			<a href="#">Tågehornvej 32</a>
-			<p>9300 Ølstykke</p>
-			<p>islandere(at)live.com</p>
+	<div class="tider">
+		<div class="col-md-3 ">
+			<p>Mandag-fredag:</p>
+			<p>08:00-13:00</p>
+			<p>Lørdag:</p>
+			<p>09:00-11:00</p>
 		</div>
-		
-		<div class="tider">
-			<div class="col-md-3 ">
-				<p>Mandag-fredag:</p>
-				<p>08:00-13:00</p>
-				<p>Lørdag:</p>
-				<p>09:00-11:00</p>
-			</div>
-		</div>
-		<div class="footerInhold">
-			
-			<img src="img/guy.jpg" alt="">
-			<p>Thomas Karse </p>
-			
-			<img src="img/guy2.jpg" alt="">
-			<p>Bjarne Arm</p>
-			
-			<img src="img/guy3.jpg" alt="">
-			<p>Lisbeth Grøn</p>
-		</div>
-		
-	</footer>
+	</div>
+	<div class="footerInhold">
+
+		<img src="img/guy.jpg" alt="">
+		<p>Thomas Karse </p>
+
+		<img src="img/guy2.jpg" alt="">
+		<p>Bjarne Arm</p>
+
+		<img src="img/guy3.jpg" alt="">
+		<p>Lisbeth Grøn</p>
+	</div>
+
+</footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax
 /libs/jquery/3.1.1/jquery.js"></script>

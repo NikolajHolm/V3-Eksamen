@@ -7,12 +7,13 @@ $statement->execute();
 
 
 while($row = $statement->fetch(PDO::FETCH_ASSOC)){?>
-
-			<article class="col-md-12">
-				<img src="img/<?php echo $row['imgSrc'] ?>.jpg" alt="Storm Rider">
-				<h3><?php echo $row['heading']?></h3>
-				<p><?php echo $row['articleText']?></p>
-			</article>
+<div class="col-md-12">
+	<article class="col-xs-12">
+		<h3 class="text-center"><?php echo $row['heading']?></h3>
+		<img class="text-center"src="img/<?php echo $row['imgSrc'] ?>.jpg" alt="Storm Rider">
+		<p class="text-center"><?php echo $row['articleText']?></p>
+	</article>
+</div>
 <?php 
 }
 ?>

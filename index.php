@@ -50,7 +50,7 @@
 
 		<!-- Brugernavn, adgangskode og knap -->
 		<div class="col-md-12">
-			<button type="submit"  class="btn btn-default submit login pull-right">Login</button>
+			<button type="submit" class="btn btn-default submit login pull-right">Login</button>
 			<div class="pull-right">
 				<input class="form-control" type="password" placeholder="password">
 			</div>
@@ -62,7 +62,9 @@
 	</header>
 
 	<!-- Artikler -->
-
+	<?php 
+		 include "fetchDb.php";
+		?> 
 
 	<!-- <main class="col-lg-12">
 		<div class="col-md-12">

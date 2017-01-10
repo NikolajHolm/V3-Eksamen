@@ -1,0 +1,15 @@
+body {
+  height: 100%;
+  background: grey; }
+
+main {
+  background: white; }
+  main article p {
+    padding: 0px; }
+  main aside {
+    padding: 0px;
+    background: white; }
+    main aside img {
+      width: 80%; }
+
+/*# sourceMappingURL=styles.css.map */
