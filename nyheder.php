@@ -58,12 +58,18 @@
 			<div class="padding-right form-group pull-right">
 				<input type="username" class="form-control " placeholder="brugernavn">
 			</div>
+
+			<div class="col-md-8 pull-right">
+				<a href="#">Registrér dig her...</a>
+			</div>
 		</div>
 	</header>
 
 	<!-- Artikler -->
 
-
+	<?php 
+		include "fetchDb.php";
+	 ?>
 	<!-- <main class="col-lg-12">
 		<div class="col-md-12">
 			<article class="col-md-12">

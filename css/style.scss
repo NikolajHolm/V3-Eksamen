@@ -4,35 +4,45 @@ $header-top-padding: 10px 0;
 $heading-font: libre Baskerville;
 
 body {
-    margin: 0;
+	margin: 0;
 
-    header {
-    	padding: 0px;
-    	margin: 0px;
-        background: $head-bg-color;
-        font-family: $heading-font;
-        color: $heading-color;
+	header {
+		padding: 0px;
+		margin: 0px;
+		background: $head-bg-color;
+		font-family: $heading-font;
+		color: $heading-color;
 
-        header p {}
-    }
+		header p {}
 
-    nav {
-        background: $head-bg-color;
-        display: flex;
 
-        ul {
-            list-style-type: none;
+		.input-no-padding {
+			padding-left: 0px;
+		}
 
-            li {
-                a {
-                    color: $heading-color;
-                }
+		div {
+			a{
+				color: $heading-color;
+			}
+		}
+	}
 
-                #forside {
-                    text-decoration: underline;
-                }
-            }
-        }
+	nav {
+		ul {
+			display: flex;
+			list-style-type: none;
+			justify-content: space-around;
+
+			li {
+				a {
+					color: $heading-color;
+				}
+
+				#forside {
+					text-decoration: underline;
+				}
+			}
+		}
 		
 		.searchicon {
 			margin: 0px;
@@ -40,12 +50,32 @@ body {
 			background: transparent;
 		}
 
-    }
+		.submit {
+			padding: 0px;
+		}
 
-    footer {
-    	background: $head-bg-color;
-    	p {
-    		margin: 0px;
-    	}
-    }
+		.input {
+			padding: 5px;
+		}
+		
+
+		
+	}
+
+	footer {
+		display: flex;
+		background: $head-bg-color;
+
+		p {
+			margin: 0px;
+		}
+		
+		.footerInhold {
+			flex: 1;
+		}
+
+		img {
+			width: 12%;
+		}
+	}
 }

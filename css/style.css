@@ -6,22 +6,34 @@ body {
     background: #FFC63C;
     font-family: libre Baskerville;
     color: #041B87; }
-  body nav {
-    background: #FFC63C;
-    display: flex; }
-    body nav ul {
-      list-style-type: none; }
-      body nav ul li a {
-        color: #041B87; }
-      body nav ul li #forside {
-        text-decoration: underline; }
-    body nav .searchicon {
-      margin: 0px;
-      border: 0px;
-      background: transparent; }
+    body header .input-no-padding {
+      padding-left: 0px; }
+    body header div a {
+      color: #041B87; }
+  body nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around; }
+    body nav ul li a {
+      color: #041B87; }
+    body nav ul li #forside {
+      text-decoration: underline; }
+  body nav .searchicon {
+    margin: 0px;
+    border: 0px;
+    background: transparent; }
+  body nav .submit {
+    padding: 0px; }
+  body nav .input {
+    padding: 5px; }
   body footer {
+    display: flex;
     background: #FFC63C; }
     body footer p {
       margin: 0px; }
+    body footer .footerInhold {
+      flex: 1; }
+    body footer img {
+      width: 12%; }
 
 /*# sourceMappingURL=style.css.map */
