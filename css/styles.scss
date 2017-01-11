@@ -1,24 +1,76 @@
-body{
-	height: 100%;
-	background: grey;
+$head-bg-color: #FFC63C;
+$heading-color: #041B87;
+$header-top-padding: 10px 0;
+$heading-font: libre Baskerville;
+
+body {
+    height: 100%;
+    background: grey;
+}
+
+nav {
+    ul {
+        li {
+            a {
+                color: $heading-color;
+            }
+
+            #forside {
+                text-decoration: none;
+            }
+
+            #nyheder {
+                text-decoration: underline;
+            }
+        }
+    }
 }
 
 main {
-	background: white;
-	article {
-		
-		
-		p{
-			padding: 0px;
-		}
-	}
+    background: white;
 
-	aside {
-		padding: 0px;
-		background: white;
+    article {
+        h2 {
+            color: $heading-color;
+        }
 
-		img {
-			width: 80%;
-		}
-	}
+        p {
+            padding: 0px;
+        }
+
+        hr {
+            border: 0;
+            border-bottom: 1px dashed black;
+            margin-right: 10px;
+        }
+
+        form {
+            div {
+                label {
+                    display: block;
+                }
+
+                form label {
+                    padding-top: 10px;
+                    padding-left: 1em;
+
+                    /*padding-right: 1em;*/
+                    color: #999d9d;
+                }
+            }
+        }
+    }
+
+    #forside {
+        text-decoration: none;
+    }
+
+    aside {
+        padding: 0px;
+        background: white;
+
+        img {
+            width: 80%;
+        }
+    }
 }

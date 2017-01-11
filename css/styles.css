@@ -2,10 +2,32 @@ body {
   height: 100%;
   background: grey; }
 
+nav ul li a {
+  color: #041B87; }
+nav ul li #forside {
+  text-decoration: none; }
+nav ul li #nyheder {
+  text-decoration: underline; }
+
 main {
   background: white; }
+  main article h2 {
+    color: #041B87; }
   main article p {
     padding: 0px; }
+  main article hr {
+    border: 0;
+    border-bottom: 1px dashed black;
+    margin-right: 10px; }
+  main article form div label {
+    display: block; }
+  main article form div form label {
+    padding-top: 10px;
+    padding-left: 1em;
+    /*padding-right: 1em;*/
+    color: #999d9d; }
+  main #forside {
+    text-decoration: none; }
   main aside {
     padding: 0px;
     background: white; }

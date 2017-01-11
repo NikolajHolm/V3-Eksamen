@@ -24,7 +24,7 @@
 			<div class="col-md-6">
 				<ul class="">
 					<li><a id="forside"href="index.php">Forside</a></li>
-					<li><a href="nyheder.php">Nyheder</a></li>
+					<li><a id="nyheder"href="nyheder.php">Nyheder</a></li>
 					<li><a href="#">Sitemap</a></li>
 					<li><a href="#">Print</a></li>
 					<li><a href="#">Kontakt</a></li>
@@ -50,14 +50,15 @@
 		
 
 		<!-- Brugernavn, adgangskode og knap -->
+		<form action="checkUser.php" method="get"></form>
 		<div class="col-md-12">
-			<button type="submit"  class="btn btn-default submit login pull-right">Login</button>
+			<button type="submit"  class="btn btn-default submit login pull-right" value="Log ind">Login</button>
 			<div class="pull-right">
-				<input class="form-control" type="password" placeholder="password">
+				<input class="form-control" type="password" placeholder="password" name="formPassword">
 			</div>
 
 			<div class="padding-right form-group pull-right">
-				<input type="username" class="form-control " placeholder="brugernavn">
+				<input type="username" class="form-control " placeholder="brugernavn" name="formUsername">
 			</div>
 		</div>
 	</header>
@@ -65,62 +66,69 @@
 	<!-- Artikler -->
 
 	
-	<main class="col-lg-10 col-md-offset-1">
-	<!-- 	<?php 
-		// include "fetchDb.php";
-	?> -->
-	<div class="col-md-8">
-		<article>
-			<img src="img/news3.jpg" alt="">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum id quod veniam quisquam, illo quas exercitationem iste deserunt consectetur commodi molestias odit consequatur at pariatur eius amet, adipisci quibusdam expedita.</p>
-		</article>
-		<article>
-			<img src="img/news4.jpg" alt="">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati animi natus, nihil omnis dolor laborum blanditiis cumque, quisquam nostrum soluta dolorum. Minus autem dicta totam praesentium, rem ullam, quaerat nihil.</p>
-		</article>
-		<article>
-			<img src="img/news1.jpg" alt="">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit doloribus odit nesciunt temporibus doloremque excepturi amet omnis! Optio earum repudiandae numquam inventore ipsam incidunt iusto vitae repellendus sunt voluptate, beatae!</p>
-		</article>
-	</div>
-	
-		<aside class="col-md-4">
-			<img class="center-block" src="img/sponsor1.jpg" alt="">
-			<img class="center-block" src="img/sponsor2.jpg" alt="">
-			<img class="center-block" src="img/sponsor3.jpg" alt="">
-		</aside>
-</main>
+	<main class="container">
+		<form action="insert.php" class="col-md-12 center-block"method="get" class="form-horizontal ">
+			<div class="form-group insertToSite">
+				<label class="center-block"for="heading">Overskrift:</label>
+				<input class="form-control " id="heading"type="text" name="heading" placeholder="Overskrift her...">
+				<label for="imgsrc">Billednavn:</label>
+				<input class="form-control" id="imgsrc" type="text" name="imgsrc" placeholder="Sti til billede...">
+				<label for="imgalt">Alt tekst til billede:</label>
+				<input class="form-control" id="imgalt" type="text" name="imgalt" placeholder="Alt tekst til billede....">
+				<label for="txt">Tilføj tekst:</label>
+				<input class="form-control" id="txt" type="text" name="txt" placeholder="Tilføj tekst her...">
+			</div>
+			<div class="button">
+				<input type="submit" align="middle" value="Indsæt" class="btn bt-default btn-large col-sm-12 button ">
+			</div>
 
-<footer class="col-xs-12">
-	<div class="col-md-5">
-		<a href="#">Islændere i DK</a>
-		<br>
-		<a href="#">Tågehornvej 32</a>
-		<p>9300 Ølstykke</p>
-		<p>islandere(at)live.com</p>
-	</div>
 
-	<div class="tider">
-		<div class="col-md-3 ">
-			<p>Mandag-fredag:</p>
-			<p>08:00-13:00</p>
-			<p>Lørdag:</p>
-			<p>09:00-11:00</p>
+
+		</form>
+		<div class="col-md-8">
+			<?php 
+			include "fetchDb.php";
+			?> 
+
 		</div>
-	</div>
-	<div class="footerInhold">
 
-		<img src="img/guy.jpg" alt="">
-		<p>Thomas Karse </p>
+		<aside class="col-md-4">
+			<img class="center-block img-responsive" src="img/sponsor1.jpg" alt="">
+			<img class="center-block img-responsive"  src="img/sponsor2.jpg" alt="">
+			<img class="center-block img-responsive" src="img/sponsor3.jpg" alt="">
+		</aside>
+	</main>
 
-		<img src="img/guy2.jpg" alt="">
-		<p>Bjarne Arm</p>
+	<footer class="col-xs-12">
+		<div class="col-md-5">
+			<a href="#">Islændere i DK</a>
+			<br>
+			<a href="#">Tågehornvej 32</a>
+			<p>9300 Ølstykke</p>
+			<p>islandere(at)live.com</p>
+		</div>
 
-		<img src="img/guy3.jpg" alt="">
-		<p>Lisbeth Grøn</p>
-	</div>
+		<div class="tider">
+			<div class="col-md-3 ">
+				<p>Mandag-fredag:</p>
+				<p>08:00-13:00</p>
+				<p>Lørdag:</p>
+				<p>09:00-11:00</p>
+			</div>
+		</div>
+		<div class="footerInhold">
 
-</footer>
+			<img src="img/guy.jpg" alt="">
+			<p>Thomas Karse </p>
+
+			<img src="img/guy2.jpg" alt="">
+			<p>Bjarne Arm</p>
+
+			<img src="img/guy3.jpg" alt="">
+			<p>Lisbeth Grøn</p>
+		</div>
+
+	</footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax
 /libs/jquery/3.1.1/jquery.js"></script>

@@ -62,11 +62,9 @@
 	</header>
 
 	<!-- Artikler -->
-	<?php 
-		 include "fetchDb.php";
-		?> 
 
-	<!-- <main class="col-lg-12">
+
+	<main class="col-lg-12">
 		<div class="col-md-12">
 			<article class="col-md-12">
 				<img src="img/articleImg1.jpg" alt="Storm Rider">
@@ -101,7 +99,7 @@
 			<article class="col-md-12">
 				<img src="img/articleImg8.jpg" alt="IceRiding">
 			</article>
-		</div> -->
+		</div>
 	</main>
 
 	<footer class="col-xs-12">
@@ -123,13 +121,13 @@
 		</div>
 		<div class="footerInhold">
 			
-			<img src="img/guy.jpg" alt="">
+			<img class="img-responsive"src="img/guy.jpg" alt="">
 			<p>Thomas Karse </p>
 			
-			<img src="img/guy2.jpg" alt="">
+			<img class="img-responsive"src="img/guy2.jpg" alt="">
 			<p>Bjarne Arm</p>
 			
-			<img src="img/guy3.jpg" alt="">
+			<img class="img-responsive"src="img/guy3.jpg" alt="">
 			<p>Lisbeth Grøn</p>
 		</div>
 		
